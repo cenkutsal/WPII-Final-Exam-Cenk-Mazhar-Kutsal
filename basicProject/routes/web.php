@@ -14,5 +14,5 @@ use App\Http\Controllers\StudentController;
 |
 */
 
-
+Route::get('/', [StudentController::class, 'index']);
 Route::get('/student/{id}', [StudentController::class, 'edit']);
