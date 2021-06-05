@@ -15,4 +15,6 @@ use App\Http\Controllers\StudentController;
 */
 
 Route::get('/', [StudentController::class, 'index']);
+Route::get('/student/create', [StudentController::class, 'create']);
 Route::get('/student/{id}', [StudentController::class, 'edit']);
+Route::post('/student', [StudentController::class, 'store'])->name('student.store');
